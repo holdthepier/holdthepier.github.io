@@ -1,0 +1,22 @@
+/* Hold the Pier: gizlilik ve destek sayfaları (13b; 13c: on dil). Dış yazı tipi ve betik yok; hızlı yüklenir. */
+:root { --zemin: #111417; --kagit: #e4d6b6; --soluk: #b8ab8f; --kan: #c0241b; --altin: #ead08a; --cizgi: #3a3632; }
+* { box-sizing: border-box; }
+html { background: var(--zemin); }
+body { margin: 0; padding: 24px 16px 48px; color: var(--kagit); background: var(--zemin);
+  font: 17px/1.6 Georgia, "Iowan Old Style", "Palatino Linotype", serif; }
+main { max-width: 720px; margin: 0 auto; }
+header { border-bottom: 2px solid var(--cizgi); margin-bottom: 24px; padding-bottom: 12px; }
+.ad { font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--soluk); margin: 0; }
+h1 { font-size: 34px; line-height: 1.2; margin: 4px 0 0; font-weight: 700; }
+h2 { font-size: 20px; color: var(--altin); margin: 28px 0 6px; }
+p, li { margin: 0 0 12px; }
+a { color: var(--altin); }
+/* 13c: on dil: dil satırı başlığın üstünde, sarılarak */
+.dil { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 14px; margin: 0 0 10px; }
+.dil span { color: var(--soluk); }
+:lang(ja) body, body:lang(ja) { font-family: "Hiragino Mincho ProN", "Yu Mincho", Georgia, serif; }
+:lang(ko) body, body:lang(ko) { font-family: "AppleMyungjo", "Nanum Myeongjo", Georgia, serif; }
+li[lang] { margin-bottom: 6px; }
+.not { color: var(--soluk); font-size: 14px; margin-top: 32px; border-top: 1px solid var(--cizgi); padding-top: 12px; }
+nav.alt { margin-top: 24px; font-size: 15px; }
+nav.alt a { margin-right: 16px; }
